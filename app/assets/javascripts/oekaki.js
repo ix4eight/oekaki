@@ -12,7 +12,7 @@ function draw(){
   }
 }
 function keyPressed(){
-  if (key == '9'){
+  if (key == '2'){
     s = 10;
   }
   if (key == '1'){
