@@ -42,6 +42,10 @@ function keyPressed(){
     s = 1;
   }
 
+  if (key == 'w'){
+    c = "white";
+  }
+
   if (key == 'r'){
     c = "red";
   }
