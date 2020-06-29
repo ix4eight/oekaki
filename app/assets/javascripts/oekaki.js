@@ -5,6 +5,7 @@ let q = 0;
 function setup(){
   createCanvas(q);
   createCanvas(window.innerWidth - 100, windowHeight - 100);
+  background(255);
 }
 
 function draw(){
@@ -54,6 +55,6 @@ function keyPressed(){
   }
 
   if(key == 'q') {
-    saveCanvas('myCanvas', 'jpg');
+    saveCanvas('myCanvas', 'png');
   }
 }
