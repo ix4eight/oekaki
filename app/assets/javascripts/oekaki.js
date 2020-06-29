@@ -54,6 +54,10 @@ function keyPressed(){
     c = "yellow";
   }
 
+  if(key == 'g'){
+    c = "green";
+  }
+
   if(key == 'q') {
     saveCanvas('myCanvas', 'png');
   }
