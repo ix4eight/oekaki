@@ -1,65 +1,84 @@
-let c = 0;
-let s = 1;
+let color = 0;
 let q = 0;
+let weight = 1;
 
-function setup(){
+$(function() {
+  $('#one').on('click', function() {
+    weight = 1;
+  });
+
+  $('#ten').on('click', function() {
+    weight = 10;
+  });
+
+  $("#twenty").click(function() {
+    weight = 20;
+  });
+
+  $("#thirty").click(function() {
+    weight = 30;
+  });
+});
+
+function setup() {
   createCanvas(q);
   createCanvas(window.innerWidth - 100, windowHeight - 100);
   background(255);
 }
 
-function draw(){
-  stroke(c);
-  strokeWeight(s);
-  
-  if (mouseIsPressed){
+function draw() {
+  stroke(color);
+  strokeWeight(weight);
+
+  if(mouseIsPressed) {
     line(mouseX, mouseY, pmouseX, pmouseY);
+    strokeWeight(weight)
   }
 }
 
-function keyPressed(){
-  if (key == "s"){
+function keyPressed() {
+  if(key == "s") {
     q = createCanvas(400,400);
   }
 
-  if (key == "m"){
+  if(key == "m") {
     q = createCanvas(700,700);
   }
 
-  if (key == "l"){
+  if(key == "l") {
     q = createCanvas(windowWidth, windowHeight);
   }
 
-  if (key == '3'){
-    s = 20;
+  if(key == '3') {
+    weight = 20;
   }
 
-  if (key == '2'){
-    s = 10;
+  if(key == '2') {
+    weight = 10;
   }
 
-  if (key == '1'){
-    s = 1;
+  if(key == '1') {
+    weight = 1;
   }
 
-  if (key == 'w'){
-    c = "white";
+  if(key == 'w') {
+    color = "white";
   }
 
-  if (key == 'r'){
-    c = "red";
+  if(key == 'r') {
+    color = "red";
   }
 
-  if (key == 'b'){
-    c = "blue";
+  if(key == 'b') {
+    color = "blue";
   }
   
-  if(key == 'y'){
-    c = "yellow";
+  if(key == 'y') {
+    color = "yellow";
   }
 
-  if(key == 'g'){
-    c = "green";
+  if(key == 'g') {
+    color = "green";
   }
 
   if(key == 'q') {
