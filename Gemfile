@@ -64,3 +64,4 @@ gem 'pry-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem "font-awesome-sass"

@@ -18,7 +18,9 @@ $(function() {
   $('#thirty').on('click', function() {
     weight = 30;
   });
+});
 
+$(function(){
   $('#kesigomu').on('click', function() {
     color = "white"
   });
@@ -41,7 +43,6 @@ $(function() {
   $('#midori').on('click', function() {
     color = "green"
   });
-
 });
 
 
@@ -74,7 +75,6 @@ function keyPressed() {
   if(key == "l") {
     q = createCanvas(windowWidth, windowHeight);
   }
-
 
   if(key == 'q') {
     saveCanvas('myCanvas', 'png');
