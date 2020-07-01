@@ -11,11 +11,11 @@ $(function() {
     weight = 10;
   });
 
-  $("#twenty").click(function() {
+  $('#twenty').on('click', function() {
     weight = 20;
   });
 
-  $("#thirty").click(function() {
+  $('#thirty').on('click', function() {
     weight = 30;
   });
 });
@@ -47,18 +47,6 @@ function keyPressed() {
 
   if(key == "l") {
     q = createCanvas(windowWidth, windowHeight);
-  }
-
-  if(key == '3') {
-    weight = 20;
-  }
-
-  if(key == '2') {
-    weight = 10;
-  }
-
-  if(key == '1') {
-    weight = 1;
   }
 
   if(key == 'w') {
