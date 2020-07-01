@@ -18,7 +18,33 @@ $(function() {
   $('#thirty').on('click', function() {
     weight = 30;
   });
+
+  $('#kesigomu').on('click', function() {
+    color = "white"
+  });
+
+  $('#kuro').on('click', function() {
+    color = "black"
+  });
+  $('#aka').on('click', function() {
+    color = "red"
+  });
+
+  $('#ao').on('click', function() {
+    color = "blue"
+  });
+
+  $('#ki').on('click', function() {
+    color = "yellow"
+  });
+
+  $('#midori').on('click', function() {
+    color = "green"
+  });
+
 });
+
+
 
 function setup() {
   createCanvas(q);
@@ -49,29 +75,6 @@ function keyPressed() {
     q = createCanvas(windowWidth, windowHeight);
   }
 
-  if(key == 'w') {
-    color = "white";
-  }
-
-  if(key == 'r') {
-    color = "red";
-  }
-
-  if(key == 'e') {
-    color = "black";
-  }
-
-  if(key == 'b') {
-    color = "blue";
-  }
-  
-  if(key == 'y') {
-    color = "yellow";
-  }
-
-  if(key == 'g') {
-    color = "green";
-  }
 
   if(key == 'q') {
     saveCanvas('myCanvas', 'png');
