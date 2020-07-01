@@ -67,6 +67,7 @@ function keyPressed() {
 
   if(key == 'r') {
     color = "red";
+  }
 
   if(key == 'e') {
     color = "black";
