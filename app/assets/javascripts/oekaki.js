@@ -23,25 +23,43 @@ $(function() {
 $(function(){
   $('#kesigomu').on('click', function() {
     color = "white"
+    $('#nuritubusi').on('click', function() {
+      createCanvas = background("white");
+    });
   });
 
   $('#kuro').on('click', function() {
     color = "black"
+    $('#nuritubusi').on('click', function() {
+      createCanvas = background("black");
+    });
   });
   $('#aka').on('click', function() {
     color = "red"
+    $('#nuritubusi').on('click', function() {
+      createCanvas = background("red");
+    });
   });
 
   $('#ao').on('click', function() {
     color = "blue"
+    $('#nuritubusi').on('click', function() {
+      createCanvas = background("blue");
+    });
   });
 
   $('#ki').on('click', function() {
     color = "yellow"
+    $('#nuritubusi').on('click', function() {
+      createCanvas = background("yellow");
+    });
   });
 
   $('#midori').on('click', function() {
     color = "green"
+    $('#nuritubusi').on('click', function() {
+      createCanvas = background("green");
+    });
   });
 });
 
@@ -50,6 +68,7 @@ $(function(){
     createCanvas = background("white")
   });
 });
+
 
 function setup() {
   createCanvas(q);
