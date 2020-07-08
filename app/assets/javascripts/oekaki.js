@@ -50,7 +50,6 @@ $(function(){
 function setup() {
   createCanvas(q);
   createCanvas(window.innerWidth - 100, windowHeight - 100);
-  background(255);
 }
 
 function draw() {
@@ -66,14 +65,17 @@ function draw() {
 function keyPressed() {
   if(key == "s") {
     q = createCanvas(400,400);
+    background(255);
   }
 
   if(key == "m") {
     q = createCanvas(700,700);
+    background(255);
   }
 
   if(key == "l") {
     q = createCanvas(windowWidth, windowHeight);
+    background(255);
   }
 
   if(key == 'q') {
