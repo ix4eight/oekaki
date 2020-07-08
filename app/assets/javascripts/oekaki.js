@@ -45,7 +45,11 @@ $(function(){
   });
 });
 
-
+$(function(){
+  $('#zenkesi').on('click', function() {
+    createCanvas = background("white")
+  });
+});
 
 function setup() {
   createCanvas(q);
